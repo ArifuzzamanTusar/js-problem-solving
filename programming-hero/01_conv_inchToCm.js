@@ -1,5 +1,10 @@
 function inchToCm(inch) {
-    let cm = inch*2.54;
+    // validation
+    if (typeof inch != "number") {
+        return "Please input a number";
+    }
+    //conversion
+    let cm = inch * 2.54;
     return cm;
 }
 console.log(inchToCm(500));
